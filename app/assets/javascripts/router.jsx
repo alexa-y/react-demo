@@ -1,6 +1,7 @@
 var routes = (
   <ReactRouter.Route path='/' handler={App}>
     <ReactRouter.DefaultRoute handler={Home}/>
+    <ReactRouter.Route path='/posts/new' handler={PostForm}/>
   </ReactRouter.Route>
 );
 

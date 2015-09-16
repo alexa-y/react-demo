@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   scope :api, defaults: { format: :json }, constraints: { format: :json } do
     scope :v1 do
-      
+      resources :posts, except: [:new, :edit]
     end
   end
 end
