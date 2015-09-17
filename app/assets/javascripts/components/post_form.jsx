@@ -16,7 +16,6 @@ var PostForm = React.createClass({
         if (this.props.post) {
           this.props.post.setState({ editing: false, title: this.state.title, body: this.state.body });
         } else {
-          debugger;
           this.transitionTo('/');
         }
       }.bind(this)
