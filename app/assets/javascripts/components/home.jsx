@@ -18,7 +18,7 @@ var Home = React.createClass({
         <div className="col-md-offset-1 col-md-10">
           {loadingIcon}
           {$.map(posts, function(post) {
-            return <Post key={'post_' + post.id} postId={post.id} title={post.title} body={post.body} withComments={false} />;
+            return <IndexPost key={'post_' + post.id} postId={post.id} title={post.title} body={post.body} />;
           })}
         </div>
       </div>

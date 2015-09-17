@@ -20,4 +20,7 @@
 //= require react_router_ujs
 //= require bootstrap-sprockets
 //= require bootbox.min
+//= require formValidation/formValidation
+//= require formValidation/en_US
+//= require formValidation/bootstrap
 //= require_tree .

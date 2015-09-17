@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
   scope :api, defaults: { format: :json }, constraints: { format: :json } do
     scope :v1 do
-      resources :posts, except: [:new, :edit]
+      resources :posts, except: [:new, :edit] do
+        resources :comments, only: [:create, :destroy]
+      end
     end
   end
 end
